@@ -6,7 +6,7 @@
 # usage:        Build edX Insights application server.
 #==========================================================================================
 LMS_HOSTNAME="https://educacion.atentamente.mx"
-INSIGHTS_HOSTNAME="http://3.81.115.185:8110"  # Change this to the externally visible domain and scheme for your Insights install, ideally HTTPS
+INSIGHTS_HOSTNAME="http://34.235.170.31:8110"  # Change this to the externally visible domain and scheme for your Insights install, ideally HTTPS
 DB_USERNAME="read_only"
 DB_HOST="educacion.atentamente.mx"
 DB_PASSWORD="ZRdHqYAr0qWw8srWT44jfj2OTnqGbYlgF1R"
@@ -15,7 +15,7 @@ DB_PORT="3306"
 echo 'create an "ansible" virtualenv and activate it'
 virtualenv ansible
 . ansible/bin/activate
-git clone -b open-release/hawthorn.master https://github.com/edx/configuration.git
+git clone -b open-release/ginkgo.master https://github.com/edx/configuration.git
 
 cd configuration/
 make requirements
